@@ -34,7 +34,6 @@
             doubleVariable = 13;
             decimalVariable = 13;
 
-
             Console.WriteLine(stringVariable);
             Console.WriteLine(charvariable);
             Console.WriteLine(boolVariable);
