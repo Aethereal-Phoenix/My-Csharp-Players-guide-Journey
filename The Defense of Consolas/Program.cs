@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.Title = "Defense of Consolas";
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.Green;
             Console.ForegroundColor = ConsoleColor.Black;
 
             Console.Write("Please enter the target blocks horizontal value: ");
