@@ -1,4 +1,4 @@
-﻿namespace The_laws_of_Freach
+﻿namespace The_Laws_of_Freach
 {
     internal class Program
     {
