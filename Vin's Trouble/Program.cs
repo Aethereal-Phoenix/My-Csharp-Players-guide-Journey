@@ -62,33 +62,33 @@
             double lengthCost = 0;
             double totalCost = 0;
 
-            if (arrow._arrowhead == Arrowhead.Steel)
+            if (arrow.GetArrowhead() == Arrowhead.Steel)
             {
                 arrowheadCost = 10.00;
             }
-            else if (arrow._arrowhead == Arrowhead.Wood)
+            else if (arrow.GetArrowhead() == Arrowhead.Wood)
             {
                 arrowheadCost = 3.00;
             }
-            else if (arrow._arrowhead == Arrowhead.Obsidian)
+            else if (arrow.GetArrowhead() == Arrowhead.Obsidian)
             {
                 arrowheadCost = 5.00;
             }
 
-            if (arrow._fletching == Fletching.Plastic)
+            if (arrow.GetFletching() == Fletching.Plastic)
             {
                 fletchingCost = 10.00;
             }
-            else if (arrow._fletching == Fletching.Turkey)
+            else if (arrow.GetFletching() == Fletching.Turkey)
             {
                 fletchingCost = 5.00;
             }
-            else if (arrow._fletching == Fletching.Goose)
+            else if (arrow.GetFletching() == Fletching.Goose)
             {
                 fletchingCost = 3.00;
             }
 
-            lengthCost = arrow._length_cm * .05;
+            lengthCost = arrow.GetLength() * .05;
 
             totalCost = arrowheadCost + fletchingCost + lengthCost;
             return totalCost;
