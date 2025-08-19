@@ -8,7 +8,7 @@
             {
                 Console.WriteLine("Lets make and arrow");
                 Arrow arrow = new Arrow();
-                double arrowPrice = ArrowPrice(arrow);
+                double arrowPrice = Arrow.ArrowPrice(arrow);
                 Console.WriteLine($"The total cost of that arrow is: {arrowPrice}");
                 while (true)
                 {
@@ -54,44 +54,6 @@
                 double totalCost = totalArrows * arrowPrice;
                 Console.WriteLine($"Grand total: {totalCost}");
             }
-        }
-        public static double ArrowPrice(Arrow arrow)
-        {
-            double arrowheadCost = 0;
-            double fletchingCost = 0;
-            double lengthCost = 0;
-            double totalCost = 0;
-
-            if (arrow.GetArrowhead() == Arrowhead.Steel)
-            {
-                arrowheadCost = 10.00;
-            }
-            else if (arrow.GetArrowhead() == Arrowhead.Wood)
-            {
-                arrowheadCost = 3.00;
-            }
-            else if (arrow.GetArrowhead() == Arrowhead.Obsidian)
-            {
-                arrowheadCost = 5.00;
-            }
-
-            if (arrow.GetFletching() == Fletching.Plastic)
-            {
-                fletchingCost = 10.00;
-            }
-            else if (arrow.GetFletching() == Fletching.Turkey)
-            {
-                fletchingCost = 5.00;
-            }
-            else if (arrow.GetFletching() == Fletching.Goose)
-            {
-                fletchingCost = 3.00;
-            }
-
-            lengthCost = arrow.GetLength() * .05;
-
-            totalCost = arrowheadCost + fletchingCost + lengthCost;
-            return totalCost;
         }
     }// Methods go above this line
 }
